@@ -24,7 +24,7 @@ body {
 }
 
 .container .header .name {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .container .header .desc {
@@ -50,7 +50,7 @@ body {
   margin: 10%;
   margin-top: 15%;
   margin-bottom: 5%;
-  width: 44%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +64,7 @@ body {
 }
 
 .container .linksContainer .links .link {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,19 +72,51 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border: 2px solid white;
+  border-radius: 25%;
+  height: 6vh;
+}
+
+.container .linksContainer .links .link .iconContainer {
+  width: 15%;
+  font-size: 3.8rem;
+  height: 6vh;
+  color: white;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-decoration: none;
 }
 
-.container .linksContainer .links .link i {
-  color: white;
-  font-size: 4rem;
+.container .linksContainer .links .link .iconContainer .icon {
+  float: right;
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
+  margin: auto;
 }
 
-.container .linksContainer .links .link:visited {
+.container .linksContainer .links .link .linkTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  text-align: center;
   color: white;
+  font-size: 1.5rem;
 }
 
 .container .qrCodeContainer {
