@@ -18,10 +18,10 @@ body{
         text-align: center;
         width: 100vw;
         .name{
-            font-size: 1.7rem;
+            font-size: 1.6rem;
         }
         .desc{
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
     }
@@ -46,6 +46,10 @@ body{
                 border: 2px solid white;
                 border-radius: 25%;
                 height: 6vh;
+                transition: all 0.2s ease;
+                &.clicked{
+                    transform: scale(0.8);
+                }
                 
                 .iconContainer{  
                     width: 15%;
@@ -59,7 +63,7 @@ body{
                     
                     .icon{
                         float: right;
-                       transform: scale(0.65);
+                       transform: scale(0.55);
                        margin: auto;
 
                     }
